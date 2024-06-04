@@ -1,0 +1,131 @@
+/* General */
+*{
+    margin: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    font-family: 'Roboto', sans-serif;
+}
+#root{
+    background-color: rgb(201, 200, 200);
+}
+button{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.no-display{
+    display: none !important;
+}
+div{
+}
+.disclaimer-p{
+    color: gray;
+    font-size: 1em;
+}
+.input-p{
+    display: inline;
+}
+.text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    max-width: 500px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px 15px;
+}
+img{
+    max-width: 100%;
+}
+.error-p{
+    color: rgb(219, 0, 0);
+    font-size: 1.3em !important;
+    margin-top: 1px;
+}
+.trashDelete{
+    color: black;
+    font-size: .8em;
+    cursor: pointer;
+}
+.inline-block{
+    display: inline-block;
+}
+.close-button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: rgb(66, 2, 126);
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Header */
+header{
+    text-align: center;
+}
+header h1{
+    color: rgb(255, 255, 176);
+    background-color: rgb(83, 142, 194);
+    padding: 5px;
+    font-size: 3em;
+}
+
+.navBar-container{
+    background-color: rgb(0, 0, 0);
+    padding: 7.5px;
+}
+.navBar-container a{
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    font-size: 2em;
+    padding: 30px;
+}
+.navBar-container a:hover{
+    color: rgb(228, 201, 201);
+    transition: 0.3s;
+}
+.navBar-container a.active{
+    color: rgb(209, 203, 203);
+}
+/* Recipes */
+/* Search */
+#search-container{
+    padding-top: 10px;
+    text-align: center;
+}
+#search-box{
+    border-radius: 7.5px;
+    padding: 7.5px;
+    border: 2px pink solid;
+    font-size: 1em;
+}
+#search-box::placeholder{
+    color: rgba(133, 133, 133, 0.637);
+}
+#search-box:focus{
+    outline: none;
+    border-radius: 7.5px;
+    border: 2px pink solid;
+}
+
+#search-container button{
+    border-radius: 7.5px;
+    padding: 7.5px;
+    border: 2px pink solid;
+    font-size: 1em;
+    background-color: white;
+}
+/* Recipe */
+#recipe-container{
+    display: flex;
+}
+#recipe-container div{
+    border: 2px purple solid;
+}
+/* Filter Options */
+#filter-options-container{
+
+}
+/* Recipe results */
+#recipe-results-container{
+    
+}
