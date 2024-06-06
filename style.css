@@ -58,6 +58,25 @@ img{
     font-weight: bold;
     cursor: pointer;
 }
+/* Stars */
+/* fa-solid fa-star = full */
+/* fa-regular fa-star = empty */
+/* fa-solid fa-star-half-stroke = half */
+.unctive-star{
+    color: rgb(255, 17, 0);
+    font-size: 1.25em;
+}
+
+.active-star{
+    color: rgb(255, 17, 0);
+    font-size: 1.25em;
+}
+/* Must make typescript so that the prev stars will also get activated */
+.active-star:hover{
+    color: rgb(255, 102, 92);
+    transition: 0.1s;
+    cursor: pointer;
+}
 /* Header */
 header{
     text-align: center;
@@ -89,7 +108,7 @@ header h1{
 /* Recipes */
 /* Search */
 #search-container{
-    padding-top: 10px;
+    padding: 15px;
     text-align: center;
 }
 #search-box{
@@ -117,15 +136,52 @@ header h1{
 /* Recipe */
 #recipe-container{
     display: flex;
+    flex-direction: row;
 }
 #recipe-container div{
-    border: 2px purple solid;
+    /* Controls filter and results div */
 }
 /* Filter Options */
 #filter-options-container{
-
+    width: 200px;
+    height: 600px;
+    text-align: center;
+    border: 3px rgb(9, 0, 128) solid;
+    border-radius: 5px;
 }
+
+#filter-options-container h1{
+    color: rgb(223, 17, 3);
+    padding: 5px;
+}
+
+#filter-options-container p{
+    color: rgb(173, 5, 173);
+    padding: 5px;
+    font-size: 1.25em;
+}
+
 /* Recipe results */
 #recipe-results-container{
-    
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    height: 750px;
+    overflow-y: scroll;
+}
+
+#flex-results-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.result-container{
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    max-width: 500px;
 }
